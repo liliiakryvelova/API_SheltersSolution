@@ -19,7 +19,7 @@ https://github.com/liliiakryvelova/API_SheltersSolution.git
 * _Animal Shelter: Create an API for a local animal shelter. The API will list the available cats and dogs at the shelter._
 * _Down the file you can find the example of implementation Swagger/OpenAPI. Swagger is a set of tools created to help with API developing and documentation process. OpenAPI refers to the industry-standardspecification for RESTful API design._
 
-
+![alt text]("C:\Users\lilia\OneDrive\Pictures\sheltername.png" "Title")
 
 ## Setup/Installation Requirements
 
