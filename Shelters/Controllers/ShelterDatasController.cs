@@ -21,10 +21,21 @@ namespace Shelters.Controllers
 
     // GET api/shelterdata
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<ShelterData>>> Get([FromQuery] PaginationFilter filter)
+   
+    public async Task<ActionResult<IEnumerable<ShelterData>>> Get([FromQuery] PaginationFilter filter, string sheltername)
     {
+      var query = _db.ShelterData.AsQueryable();
+
+      if(sheltername != null)
+      {
+        query = from s in _db.ShelterData
+                    join sh in _db.Shelters
+                    on s.ShelterId equals sh.ShelterId
+                    where sh.ShelterName == sheltername
+                    select s;
+      }
       var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
-      var pagedData = await _db.ShelterData
+      var pagedData = await query
                       .Skip((validFilter.PageNumber - 1)*validFilter.PageSize)
                       .Take(validFilter.PageSize)
                       .ToListAsync();
@@ -90,7 +101,6 @@ namespace Shelters.Controllers
     }
 
     //DELETE api/shelterdata/6
-    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAnimal(int id)
     {

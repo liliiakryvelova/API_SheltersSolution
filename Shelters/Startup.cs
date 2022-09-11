@@ -10,9 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.Collections.Generic;
-using System.Threading.Tasks; 
-using System; 
+using Microsoft.AspNetCore.Identity; 
 
 namespace Shelters
 {
@@ -66,6 +64,7 @@ namespace Shelters
             });
 
             services.AddControllers();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
