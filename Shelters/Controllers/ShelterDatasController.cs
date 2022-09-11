@@ -20,9 +20,15 @@ namespace Shelters.Controllers
 
     // GET api/shelterdata
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<ShelterData>>> Get()
+    public async Task<ActionResult<IEnumerable<ShelterData>>> Get([FromQuery] PaginationFilter filter)
     {
-      return await _db.ShelterData.ToListAsync();
+      var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
+      var pagedData = await _db.ShelterData
+                      .Skip((validFilter.PageNumber - 1)*validFilter.PageSize)
+                      .Take(validFilter.PageSize)
+                      .ToListAsync();
+                      var totalRecords = await _db.ShelterData.CountAsync();
+      return Ok(new PagedResponse<List<ShelterData>>(pagedData, validFilter.PageNumber, validFilter.PageSize));
     }
 
     //POST api/shelterdata
@@ -44,7 +50,7 @@ namespace Shelters.Controllers
       {
         return NotFound();
       }
-      return shelterdata;
+      return Ok(new Response<ShelterData>(shelterdata));
     }
 
     //PUT api/shelterdata/6
