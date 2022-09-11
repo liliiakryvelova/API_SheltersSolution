@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models; 
 using Shelters.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using System.Collections.Generic;
 using System.Threading.Tasks; 
 using System; 
@@ -42,6 +45,24 @@ namespace Shelters
             services.AddSwaggerGen(c => 
             {
                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Shelters", Version = "v1" });  
+            });
+
+            services.AddAuthentication(opt => {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = "https://localhost:5001",
+                        ValidAudience = "https://localhost:5001",
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@345"))
+                    };
             });
 
             services.AddControllers();

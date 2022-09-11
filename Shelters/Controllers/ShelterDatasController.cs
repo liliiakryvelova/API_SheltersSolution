@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using Shelters.Models;
 using System.Linq;
 
@@ -89,6 +90,7 @@ namespace Shelters.Controllers
     }
 
     //DELETE api/shelterdata/6
+    [Authorize]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAnimal(int id)
     {
