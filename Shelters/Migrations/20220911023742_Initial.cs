@@ -55,12 +55,12 @@ namespace Shelters.Migrations
                 columns: new[] { "ShelterId", "Date", "ShelterName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(1883), "Hope" },
-                    { 2, new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2516), "Life" },
-                    { 3, new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2527), "Clean the room" },
-                    { 4, new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2530), "Four paws" },
-                    { 5, new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2532), "My friend" },
-                    { 6, new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2534), "Last tear" }
+                    { 1, new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(8856), "Hope" },
+                    { 2, new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9419), "Life" },
+                    { 3, new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9429), "Clean the room" },
+                    { 4, new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9432), "Four paws" },
+                    { 5, new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9434), "My friend" },
+                    { 6, new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9436), "Last tear" }
                 });
         }
 

@@ -27,7 +27,8 @@ namespace Shelters.Controllers
 
     //GET api/shelters
     [HttpPost]
-    public async Task<ActionResult<Shelter>> Post(Shelter shelter)
+    [Produces("application/json")]
+    public async Task<ActionResult<Shelter>> Post([FromBody]Shelter shelter)
     {
       _db.Shelters.Add(shelter);
       await _db.SaveChangesAsync();
@@ -49,7 +50,7 @@ namespace Shelters.Controllers
 
     //PUT api/shelters/7
     [HttpPut("{id}")]
-    public async Task<IActionResult> Put(int id, Shelter shelter)
+    public async Task<IActionResult> Put(int id, [FromBody]Shelter shelter)
     {
       if(id != shelter.ShelterId)
       {

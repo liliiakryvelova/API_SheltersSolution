@@ -12,42 +12,42 @@ namespace Shelters.Migrations
                 keyColumn: "ShelterId",
                 keyValue: 1,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(8822));
+                value: new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2294));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 2,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9320));
+                value: new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2844));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 3,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9330));
+                value: new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2855));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 4,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9332));
+                value: new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2858));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 5,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9334));
+                value: new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2860));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 6,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9336));
+                value: new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2862));
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -57,42 +57,42 @@ namespace Shelters.Migrations
                 keyColumn: "ShelterId",
                 keyValue: 1,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(1883));
+                value: new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(8856));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 2,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2516));
+                value: new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9419));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 3,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2527));
+                value: new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9429));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 4,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2530));
+                value: new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9432));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 5,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2532));
+                value: new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9434));
 
             migrationBuilder.UpdateData(
                 table: "Shelters",
                 keyColumn: "ShelterId",
                 keyValue: 6,
                 column: "Date",
-                value: new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2534));
+                value: new DateTime(2022, 9, 10, 19, 37, 42, 317, DateTimeKind.Local).AddTicks(9436));
         }
     }
 }

@@ -37,37 +37,37 @@ namespace Shelters.Migrations
                         new
                         {
                             ShelterId = 1,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(8822),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2294),
                             ShelterName = "Hope"
                         },
                         new
                         {
                             ShelterId = 2,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9320),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2844),
                             ShelterName = "Life"
                         },
                         new
                         {
                             ShelterId = 3,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9330),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2855),
                             ShelterName = "Clean the room"
                         },
                         new
                         {
                             ShelterId = 4,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9332),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2858),
                             ShelterName = "Four paws"
                         },
                         new
                         {
                             ShelterId = 5,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9334),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2860),
                             ShelterName = "My friend"
                         },
                         new
                         {
                             ShelterId = 6,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 46, 162, DateTimeKind.Local).AddTicks(9336),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2862),
                             ShelterName = "Last tear"
                         });
                 });

@@ -9,8 +9,8 @@ using Shelters.Models;
 namespace Shelters.Migrations
 {
     [DbContext(typeof(ShelterContext))]
-    [Migration("20220911005837_Initial")]
-    partial class Initial
+    [Migration("20220911023800_SeedData")]
+    partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,37 +39,37 @@ namespace Shelters.Migrations
                         new
                         {
                             ShelterId = 1,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(1883),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2294),
                             ShelterName = "Hope"
                         },
                         new
                         {
                             ShelterId = 2,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2516),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2844),
                             ShelterName = "Life"
                         },
                         new
                         {
                             ShelterId = 3,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2527),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2855),
                             ShelterName = "Clean the room"
                         },
                         new
                         {
                             ShelterId = 4,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2530),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2858),
                             ShelterName = "Four paws"
                         },
                         new
                         {
                             ShelterId = 5,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2532),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2860),
                             ShelterName = "My friend"
                         },
                         new
                         {
                             ShelterId = 6,
-                            Date = new DateTime(2022, 9, 10, 17, 58, 37, 647, DateTimeKind.Local).AddTicks(2534),
+                            Date = new DateTime(2022, 9, 10, 19, 37, 59, 625, DateTimeKind.Local).AddTicks(2862),
                             ShelterName = "Last tear"
                         });
                 });

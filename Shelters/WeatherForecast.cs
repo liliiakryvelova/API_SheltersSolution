@@ -1,6 +1,6 @@
 using System;
 
-namespace Shelters
+namespace Travel1API
 {
     public class WeatherForecast
     {

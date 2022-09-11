@@ -32,6 +32,7 @@ namespace Shelters.Controllers
     }
 
     //POST api/shelterdata
+    [HttpPost]
     public async Task<ActionResult<ShelterData>> Post(ShelterData shelterdata)
     {
       _db.ShelterData.Add(shelterdata);
